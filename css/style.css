@@ -26,12 +26,12 @@ body {
     font-weight: 400;
   }
   a {
-    background-color: #F9BC60;
+
     color: #F9BC60;
     text-decoration: none; /* No underlining */
   }
   a:hover {
-    background-color: #F9BC60;
+
     color: #F9BC60;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
