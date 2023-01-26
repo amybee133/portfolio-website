@@ -36,6 +36,59 @@ body {
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
+  .button.resume {
+    background-color: #F9BC60;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   }
+
+
+   .button.resume:hover {
+    background-color: #F9BC60;
+    color: #ffffff;
+
+   }
+   .button.contact {
+ background-color: #F9BC60;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+}
+
+
+.button.contact:hover {
+ background-color: #F9BC60;
+ color: #ffffff;
+}
+
+}
+.button.dermapal {
+background-color: #F9BC60;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+
+.button.dermapal:hover {
+background-color: #F9BC60;
+color: #ffffff;
+}
+
+
 img {
           width: 100%;
         }
