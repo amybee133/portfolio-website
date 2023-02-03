@@ -118,7 +118,7 @@ nav > ul > li > a:hover {
   text-transform: uppercase;
 }
 main {
-  padding-top: 150px;
+  padding-top: 99px;
 }
 
 #hero {
@@ -126,6 +126,10 @@ main {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#hero span {
+  display: block;
 }
 #hero p {
   font-family: "Lato", sans-serif;
@@ -170,3 +174,169 @@ footer {
   position: static;
   width: 100%;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: center;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+/* ==============================
+Large devices (1200px and larger)
+================================= */
+@media only screen and (min-width: 1200px) {
+
+  header {
+    text-align: center;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float:right;
+    margin-top: 4px;
+  }
+
+/*animated buttons*/
+
+  .button.resume {
+  animation: wiggle 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.button.contact {
+animation: wiggle 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+0%, 7% {
+  transform: rotateZ(0);
+}
+15% {
+  transform: rotateZ(-15deg);
+}
+20% {
+  transform: rotateZ(10deg);
+}
+25% {
+  transform: rotateZ(-10deg);
+}
+30% {
+  transform: rotateZ(6deg);
+}
+35% {
+  transform: rotateZ(-4deg);
+}
+40%, 100% {
+  transform: rotateZ(0);
+}
+}
+
+.button.dermapal {
+animation: wiggle 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+0%, 7% {
+  transform: rotateZ(0);
+}
+15% {
+  transform: rotateZ(-15deg);
+}
+20% {
+  transform: rotateZ(10deg);
+}
+25% {
+  transform: rotateZ(-10deg);
+}
+30% {
+  transform: rotateZ(6deg);
+}
+35% {
+  transform: rotateZ(-4deg);
+}
+40%, 100% {
+  transform: rotateZ(0);
+}
+}
+
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+.sun {
+    animation: 4s color-change infinite alternate linear;
