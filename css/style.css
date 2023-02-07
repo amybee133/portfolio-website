@@ -21,102 +21,105 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding-top: 10px
+  margin: 5px 0;
 }
 
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
+  padding-top: 10px
+  Padding-bottom: 5px
   text-align: center;
 }
 
 p {
   margin: 0;
   padding: 15px 0;
-  text-align: center;
 }
 a {
   color: #f9bc60;
   text-decoration: none; /* No underlining */
 }
-a:hover {
+a:hover,
+a:focus {
   color: #f9bc60;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: overline; /* overlining when hovering over a link */
 }
 
 .button.resume {
-  background-color: #f9bc60;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-
+  background-color: #f9bc60;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #FFFFFF;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
-
 .button.resume:hover {
-  background-color: #f9bc60;
-  color: #ffffff;
-}
-.button.contact {
-  background-color: #f9bc60;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  opacity: 0.8;
 }
 
-.button.contact:hover {
+.button.contact {
+  display: inline-block;
   background-color: #f9bc60;
-  color: #ffffff;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #FFFFFF;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button.contact:hover {
+  opacity: 0.8;
 }
 
 .button.dermapal {
-  background-color: #f9bc60;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  background-color: #f9bc60;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #FFFFFF;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button.dermapal:hover {
+  opacity: 0.8;
 }
 
-.button.dermapal:hover {
-  background-color: #f9bc60;
-  color: #ffffff;
-}
+
 
 img {
   width: 100%;
 }
 
 nav > ul {
+  list-style-type: none;
+  padding: 0;
   display: inline-block;
+  margin: 0;
 }
 
-nav > ul > li > a:hover {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: #f9bc60;
+nav > ul > li {
+  vertical-align: middle;
+  padding: 0 10px;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 0 30px;
-  margin: 0 20px;
-  text-transform: uppercase;
-  transition: 0.3s;
 }
 main {
   padding-top: 99px;
@@ -147,11 +150,7 @@ main {
 .container {
   padding: 0 15px;
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 header {
   background-color: #ffffff;
   text-align: unset;
@@ -160,7 +159,12 @@ header {
   width: 100%;
 }
 .row {
-  margin: px 30;
+  margin: 30px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .logo {
   max-width: 250px;
@@ -195,13 +199,15 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-  }
+
 }
 [class*="col-"] {
-  float: center;
+  float: left;
+  padding: 20px;
 }
 .col-md-6 {
   width: 50%;
+}
 }
 /* ==============================
 Large devices (1200px and larger)
@@ -218,12 +224,24 @@ Large devices (1200px and larger)
     float:right;
     margin-top: 4px;
   }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-md-7 {
+    width: 60%;
+  }
+  .col-md-5 {
+    width: 40%;
+  }
+}
 
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
+
 header {
   text-align: unset;
   padding: 20px 0 13px;
@@ -234,7 +252,13 @@ nav {
   float:right;
   margin-top: 4px;
 }
-
+.col-md-7 {
+  width: 60%;
+}
+.col-md-5 {
+  width: 40%;
+}
+}
 /*animated buttons*/
 
   .button.resume {
@@ -368,3 +392,4 @@ animation-iteration-count: infinite;
 }
 .sun {
     animation: 4s color-change infinite alternate linear;
+}
