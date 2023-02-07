@@ -11,22 +11,20 @@
   <body>
     <header>
       <div class="container">
-        <div>
-          <img src="img/logo.png" alt="Logo" class="logo">
-        </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Work</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
     </header>
     <main>
       <link rel="stylesheet" href="./css/styles.css" />
@@ -36,41 +34,42 @@
         </div>
       </div>
       <div>
-        <div class="column col-md-6 col-lg-7">
+        <div class="container center">
           <picture>
             <source srcset="img/profile-image@1x.jpg" media="(max-width:760px)">
             <img src="img/profile-image@2x.jpg" alt="Profile Picture">
           </picture>
-          <div>
-            <div>
-              <h2>My Story</h2>
-              <p> I'm currently studying UX design at CareerFoundry. Prior to this opportunity I graduated from UC San Diego with a degree in Cognitive and Behavioral Neuroscience. </p>
-              <p> I've spent my post-grad career working in healthcare as a medical assistant. Among so many other lessons my work experience has allowed me to practice empathy at the highest level, which I plan to take with me into my design career. </p>
-              <a href="files/resume.pdf" class="button resume">Resume</a>
+        </div>
+        <div class="container center">
+          <h2>My Story</h2>
+          <h3> I'm currently studying UX design at CareerFoundry. Prior to this opportunity I graduated from UC San Diego with a degree in Cognitive and Behavioral Neuroscience. </h3>
+          <h3> I've spent my post-grad career working in healthcare as a medical assistant. Among so many other lessons my work experience has allowed me to practice empathy at the highest level, which I plan to take with me into my design career. </h3>
+          <a href="files/resume.pdf" class="button resume">Resume</a>
+          <br>
+          <br>
+          <div class="row">
+            <h2>Skills and Tools</h2>
+            <div class="col-md-6 col-lg-7">
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li>User research</li>
+                <li>User testing</li>
+                <li>User flow</li>
+                <li>Prototyping</li>
+                <li>Wireframing</li>
+              </ul>
             </div>
-            <div>
-              <h2>Skills and Tools</h2>
-              <div>
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>User research</li>
-                  <li>User testing</li>
-                  <li>User flow</li>
-                  <li>Prototyping</li>
-                  <li>Wireframing</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Figma</li>
-                  <li>Adobe XD</li>
-                  <li>Sketch</li>
-                </ul>
-              </div>
+            <div class="col-md-6 col-lg-5">
+              <h3>Tools I Use</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>Sketch</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </main>
     <footer id="contact">
@@ -79,6 +78,13 @@
         <p>Do you have a product idea, want to discuss a project, or need a designer? Drop me an email!</p>
         <div>
           <a href="amybee133@gmail.com" class="button contact"> Send Email</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/amy-bennett-76b0b5167/" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.93913 2 3.92172 2.42143 3.17157 3.17157C2.42143 3.92172 2 4.93913 2 6V26C2 27.0609 2.42143 28.0783 3.17157 28.8284C3.92172 29.5786 4.93913 30 6 30H26C27.0609 30 28.0783 29.5786 28.8284 28.8284C29.5786 28.0783 30 27.0609 30 26V6C30 4.93913 29.5786 3.92172 28.8284 3.17157C28.0783 2.42143 27.0609 2 26 2H6ZM8.204 10.594C8.83787 10.594 9.44577 10.3422 9.89398 9.89398C10.3422 9.44577 10.594 8.83787 10.594 8.204C10.594 7.57013 10.3422 6.96223 9.89398 6.51401C9.44577 6.0658 8.83787 5.814 8.204 5.814C7.57013 5.814 6.96223 6.0658 6.51401 6.51401C6.0658 6.96223 5.814 7.57013 5.814 8.204C5.814 8.83787 6.0658 9.44577 6.51401 9.89398C6.96223 10.3422 7.57013 10.594 8.204 10.594V10.594ZM10.204 25.626V12.468H6.204V25.626H10.204ZM12.86 12.468H16.86V14.23C17.45 13.306 18.746 12.062 21.156 12.062C24.032 12.062 25.594 13.968 25.594 17.594C25.594 17.768 25.61 18.562 25.61 18.562V25.624H21.61V18.564C21.61 17.594 21.406 15.688 19.25 15.688C17.092 15.688 16.91 18.084 16.86 19.652V25.624H12.86V12.468V12.468Z" fill="black" />
+            </svg>
+          </a>
         </div>
         <p>copyright Amy Bennett 2023</p>
       </div>
