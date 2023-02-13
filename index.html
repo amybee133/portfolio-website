@@ -8,10 +8,12 @@
     <meta name="description" content="UX portfolio project">
     <title>Amy Bennett UX/UI Designer San Diego</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/b991b0ef6a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <img src="img/logo.png" alt="Logo" class="logo">
         <nav>
           <ul>
@@ -23,6 +25,8 @@
             </li>
             <li>
               <a href="#contact">Contact</a>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </li>
           </ul>
         </nav>
@@ -696,6 +700,7 @@
         <p>copyright Amy Bennett 2023</p>
       </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
