@@ -102,7 +102,9 @@ a:focus {
   opacity: 0.8;
 }
 
-
+main {
+    padding-top: 56px;
+}
 
 img {
   width: 100%;
@@ -120,6 +122,39 @@ nav > ul > li {
   padding: 0 10px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
 main {
   padding-top: 99px;
@@ -193,7 +228,7 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
   }
   nav {
     width: auto;
@@ -201,6 +236,14 @@ Medium devices (640px and larger)
     margin-top: 4px;
 
 }
+
+nav>ul {
+      margin: 1em 0;
+  }
+
+  nav>ul>li {
+      display: inline-block;
+  }
 [class*="col-"] {
   float: left;
   padding: 20px;
