@@ -8,47 +8,52 @@
     <meta name="author" content="Amy Bennett">
     <meta name="description" content="UX portfolio project">
     <title>Amy Bennett- About Amy Bennett 😄</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/b991b0ef6a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Work</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            <li>
-              <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-            </li>
-          </ul>
-        </nav>
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo" class="logo">
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">Work</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <link rel="stylesheet" href="./css/styles.css" />
-      <div>
-        <div>
-          <h1>About Me</h1>
-        </div>
-      </div>
-      <div>
-        <div class="container center">
+      <div class="container">
+        
+        <div class="about">
           <picture>
             <source srcset="img/profile-image@1x.jpg" media="(max-width:760px)">
-            <img src="img/profile-image@2x.jpg" alt="Profile Picture">
+            <img src="img/profile-image@2x.jpg" alt="Profile Picture" style="max-width:300px;width:100%" class="center">
           </picture>
         </div>
         <div class="container center">
-          <h2>My Story</h2>
+          <h2>About Me</h2>
           <h3> I'm currently studying UX design at CareerFoundry. Prior to this opportunity I graduated from UC San Diego with a degree in Cognitive and Behavioral Neuroscience. </h3>
           <h3> I've spent my post-grad career working in healthcare as a medical assistant. Among so many other lessons my work experience has allowed me to practice empathy at the highest level, which I plan to take with me into my design career. </h3>
-          <a href="files/resume.pdf" class="button resume">Resume</a>
+          <a href="files/resume.pdf" class="button resume">Resume </a>
           <br>
           <br>
           <div class="row">
@@ -74,12 +79,11 @@
           </div>
         </div>
       </div>
-      </div>
     </main>
     <footer id="contact">
       <div>
-        <h2>Get in Touch</h2>
-        <p>Do you have a product idea, want to discuss a project, or need a designer? Drop me an email!</p>
+        <h2>Get in Touch✨</h2>
+        <h3>Do you have a product idea, want to discuss a project, or need a designer? Drop me an email!</h3>
         <div>
           <a href="amybee133@gmail.com" class="button contact"> Send Email</a>
         </div>
@@ -94,7 +98,7 @@
       </div>
       <!--Footer-->
     </footer>
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
