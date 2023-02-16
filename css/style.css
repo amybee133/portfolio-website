@@ -194,7 +194,6 @@ main {
   text-align: center;
 }
 
-
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -254,6 +253,13 @@ footer {
     padding: 0;
     text-align: right;
     margin: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* ==============================
@@ -317,6 +323,9 @@ Large devices (1200px and larger)
   .col-lg-5 {
     width: 40%;
   }
+  .about img {
+        margin-bottom: 10px;
+        text-align: center;
 }
 
   /* ==============================
