@@ -19,6 +19,7 @@ body {
   background-color: #FFFFFF;
   font-family: Inter, sans-serif;
   font-size: 16px;
+  font-weight:400
   line-height: 1.6;
   color: #000000;
 }
@@ -185,7 +186,7 @@ main {
   display: block;
 }
 #hero p {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   padding: 10px 0;
@@ -327,6 +328,42 @@ Large devices (1200px and larger)
         margin-bottom: 10px;
         text-align: center;
 }
+h1, h2, h3, h4 {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #272343;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #272343;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        margin: 50px 0 40px 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        color: #272343;
+        letter-spacing: 0.05%;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1em;
+        color: #272343;
+        font-weight: 500;
+        padding: 10px 0;
+        margin: 0
+    }
 
   /* ==============================
 X-large devices (1440px or larger)
